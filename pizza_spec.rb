@@ -36,11 +36,17 @@ describe Pizza do
       pizza.toppings.should be_a(Array)
     end
   end
+  describe "#required_bake_time" do
+    it "should return the sum of 15 minutes (in seconds) plus the maximum bake time of all topping objects in toppings" do
+      pizza.toppings.include? {|element| element.class()}
+    end
+  end
 end
 
 
 
-
+#A pizza should have a method required_bake_time which returns 
+#the sum of 900 (15 minutes) plus the maximum bake time of all its toppings
 
 
 
