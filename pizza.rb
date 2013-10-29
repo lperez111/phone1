@@ -1,9 +1,7 @@
 class Pizza
-
-  def initialize(name, description, time_baked)
+  attr_reader :name
+  def initialize(name)
     @name = name
-    @description = description
-    @time_baked = time_baked
   end
 
 end
