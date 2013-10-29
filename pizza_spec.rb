@@ -4,7 +4,7 @@ require_relative 'pizza'
 
 describe Pizza do
   let(:name){"supreme"}
-  let(:description) {[starting_topping]}
+  let(:description) {""}
   let(:time_baked){0}
   let(:pizza){Pizza.new(name, description, time_baked)}
   describe "#initialize" do
