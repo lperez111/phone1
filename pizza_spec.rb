@@ -21,6 +21,12 @@ describe Pizza do
     it "should be initialized with a name string" do
       pizza.name.should be_a(String)
     end
+    it "should have attribute time_baked" do
+      pizza.time_baked.should eq(time_baked)
+    end
+    it "should have attribute description" do
+      pizza.description.should eq(description)
+    end
   end
 end
 
