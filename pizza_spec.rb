@@ -27,6 +27,14 @@ describe Pizza do
     it "should have attribute description" do
       pizza.description.should eq(description)
     end
+    it "should have attribute time_baked, which defaults to zero" do
+      pizza.time_baked.should eq(0)
+    end
+  end
+  describe "#toppings" do
+    it "should have many toppings" do
+      pizza.toppings.should be_a(Array)
+    end
   end
 end
 
